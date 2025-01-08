@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Kategori -->
+    <section id="kategori" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Kategori Produk</h2>
+            <div class="row">
+                <!-- Item 1 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <div style="width: 100%; height: 300px; overflow: hidden;">
+                            <img src="{{ url_for('static', filename='image/setelan.jpg') }}" class="card-img-top" alt="Setelan" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Setelan</h5>
+                            <p class="card-text">Outfit setelan 1 set, mix and match untuk menjaga style anda.</p>
+                            <a href="#" class="btn btn-outline-primary">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Item 2 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <div style="width: 100%; height: 300px; overflow: hidden;">
+                            <img src="{{ url_for('static', filename='image/sepatu.jpg') }}" class="card-img-top" alt="Sepatu" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sepatu</h5>
+                            <p class="card-text">Koleksi sepatu untuk menambah gaya anda menjadi lebih stylish.</p>
+                            <a href="#" class="btn btn-outline-primary">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Item 3 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <div style="width: 100%; height: 300px; overflow: hidden;">
+                            <img src="{{ url_for('static', filename='image/jam tangan.jpg') }}" class="card-img-top" alt="Jam Tangan" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jam Tangan</h5>
+                            <p class="card-text">Berbagai pilihan jam tangan untuk menambah style anda lebih profesional.</p>
+                            <a href="#" class="btn btn-outline-primary">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Item 4 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <div style="width: 100%; height: 300px; overflow: hidden;">
+                            <img src="{{ url_for('static', filename='image/kacamata.jpg') }}" class="card-img-top" alt="Kacamata" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Kacamata</h5>
+                            <p class="card-text">Kacamata juga bisa menambah style anda menjadi lebih bergaya.</p>
+                            <a href="#" class="btn btn-outline-primary">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+{% endblock %}

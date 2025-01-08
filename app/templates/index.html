@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <!-- Kategori -->
+    <section id="kategori" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">CHOOSE YOUR STYLE</h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='image/soft boy.jpg') }}" class="card-img-top" alt="Soft Boy" style="object-fit: cover; height: 300px;">
+                        <div class="card-body text-center"style="background-color: #c0c0c0;">
+                            <h5 class="card-title" style="font-family: 'Times New Roman', Times, serif;">SOFT BOY</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='image/old money.jpg') }}" class="card-img-top" alt="Old Money" style="object-fit: cover; height: 300px;">
+                        <div class="card-body text-center"style="background-color: #c0c0c0;">
+                            <h5 class="card-title" style="font-family: 'Times New Roman', Times, serif;">OLD MAN</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='image/muscle.jpg') }}" class="card-img-top" alt="Cool Man" style="object-fit: cover; height: 300px;">
+                        <div class="card-body text-center"style="background-color: #c0c0c0;">
+                            <h5 class="card-title" style="font-family: 'Times New Roman', Times, serif;">COOL MAN</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}
